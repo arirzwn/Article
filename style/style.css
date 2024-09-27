@@ -1,0 +1,540 @@
+* {
+  font-family: "Poppins", system-ui;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid red;*/
+  box-sizing: border-box;
+}
+
+header {
+  padding: 10px 0 10px 0;
+  margin-right: 70px;
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo:hover {
+  color: green;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  text-decoration: none;
+}
+
+.navbar ul i {
+  display: none;
+}
+.navbar ul li:hover a {
+  color: green;
+}
+
+.navbar ul .aktif {
+  border-bottom: 2px solid green;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .button-menu {
+  display: none;
+}
+
+.container-content {
+  display: flex;
+}
+
+.tag-and-date {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  font-size: 13px;
+  color: #342e2e;
+}
+
+.tag {
+  background-color: #85e053;
+  border-radius: 30px;
+  padding: 5px 10px 5px 10px;
+}
+
+.judul {
+  font-size: 30px;
+  text-align: center;
+}
+
+.teks-preview {
+  color: #5d5d5d;
+  margin: auto;
+  width: 50%;
+  font-size: 15px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.gambar-header {
+  text-align: center;
+}
+
+.gambar-header img {
+  width: 60%;
+}
+
+article {
+  margin: auto;
+  width: 60%;
+}
+
+article .paragraf {
+  font-size: 15px;
+  color: #5d5d5d;
+}
+
+.teks-preview2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+article li {
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+article li + p {
+  color: #5d5d5d;
+  font-size: 15px; /* Mengatur ukuran font deskripsi lebih kecil */
+}
+
+section button {
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0c0c0;
+}
+
+.list-berita {
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 50px;
+}
+
+section .judul-tombol {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+section .card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .card {
+  width: 400px;
+}
+
+section .card figure {
+  height: 250px;
+  overflow: hidden;
+}
+
+section .card span {
+  font-size: 13px;
+  color: #5d5d5d;
+}
+
+section .card h4 {
+  font-size: 17px;
+  font-weight: 500;
+}
+section .card p {
+  font-size: 14px;
+  color: #5d5d5d;
+  margin-top: 5px;
+}
+
+section .gambar-list-berita img {
+  width: 400px;
+}
+
+.banner {
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.banner figure {
+  overflow: hidden;
+  height: 500px;
+}
+
+.banner figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.banner form {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner form input {
+  border: none;
+  border-radius: 50px;
+  padding: 10px 120px 10px 20px;
+  width: 200px;
+}
+
+.banner form button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border: none;
+  background-color: yellowgreen;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container-popular-article {
+  /*display: none;*/
+  display: flex;
+  margin-left: 70px;
+  margin-right: 70px;
+  column-gap: 10px;
+}
+
+.container-popular-article h1 {
+}
+
+.container-popular-article .article-popular-1 {
+  width: 50%;
+}
+
+.container-popular-article .gambar-popular-1 {
+  height: 450px;
+  width: 100%;
+  object-fit: contain;
+}
+.container-popular-article .gambar-popular-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-popular-article .article-popular-1 span {
+  font-size: 13px;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 4px;
+  color: #7a7777;
+}
+.container-popular-article .article-popular-1 h4 {
+  font-weight: 500;
+  font-size: 25px;
+}
+.container-popular-article .article-popular-1 p {
+  /*font-weight: 500;*/
+  font-size: 14px;
+  color: #7a7777;
+}
+
+aside {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-popular-article .card-popular {
+  display: flex;
+}
+
+.container-popular-article .container-deskripsi-popular {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /*justify-content: center;*/
+}
+
+.container-popular-article .card-popular figure {
+  object-fit: contain;
+  /*overflow: hidden;*/
+  width: 200px;
+  height: 200px;
+}
+.container-popular-article .card-popular figure img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.container-popular-article .card-popular span {
+  font-size: 13px;
+  color: #7a7777;
+}
+.container-popular-article .card-popular h6 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.container-popular-article .card-popular p {
+  font-size: 15px;
+  color: #646060;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+footer .icon-love {
+  color: red;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  body,
+  header,
+  .list-berita,
+  .container-popular-article {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    margin-inline: 50px;
+  }
+
+  .navbar {
+    background-color: #85e053;
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    padding-top: 4rem;
+  }
+
+  .navbar ul {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-inline: 20px;
+  }
+
+  .navbar ul li a {
+    color: white;
+  }
+
+  header .button-menu {
+    display: block;
+    color: #85e053;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 18px;
+  }
+
+  header .button-menu .closeIcon {
+    display: none;
+  }
+
+  .closeIcon {
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    display: none;
+    color: white;
+  }
+
+  .tag-and-date {
+    font-size: 13px;
+  }
+
+  .judul {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-inline: 10px;
+  }
+
+  .teks-preview {
+    display: none;
+  }
+
+  .teks-preview2 {
+    font-size: 15px;
+  }
+
+  article .paragraf {
+    text-align: justify;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+
+  ol li {
+    font-size: 15px;
+  }
+
+  ol p {
+    text-align: justify;
+    font-size: 13px;
+  }
+
+  .list-berita {
+    margin-inline: 30px;
+  }
+
+  section .list-berita .judul-tombol {
+    display: flex;
+    align-items: center;
+    margin-inline: 15px;
+  }
+
+  section .list-berita .judul-tombol h2 {
+    font-size: 19px;
+  }
+  section .list-berita .judul-tombol button {
+  }
+
+  section .card-wrapper {
+    overflow: hidden;
+
+    width: 100%;
+    column-gap: 10px;
+  }
+
+  section .card-wrapper .card {
+    width: 100%;
+  }
+
+  section .card-wrapper .card .gambar-list-berita img {
+    object-fit: cover;
+  }
+
+  .container-popular-article {
+    margin-inline: 20px;
+    display: block;
+  }
+  .container-popular-article .article-popular-1 {
+    width: 100%;
+  }
+  .container-popular-article .article-popular-1 h4 {
+    font-size: 18px;
+  }
+  .container-popular-article .article-popular-1 p {
+    text-align: justify;
+  }
+
+  aside {
+    border: 1px solid black;
+    width: 100%;
+    flex-direction: row;
+    display: none;
+    margin-top: 30px;
+  }
+
+  aside .card-popular {
+    width: calc(100% / 3);
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+  }
+
+  aside .card-popular .container-deskripsi-popular {
+    /*border: 1px solid blue;*/
+    width: fit-content;
+  }
+  aside .container-deskripsi-popular h6 {
+    font-size: 17px;
+    text-align: justify;
+  }
+  .container-popular-article .card-popular {
+    flex-direction: column;
+    /*row-gap: 20px;*/
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tambahkan aturan CSS di sini */
+  .list-berita .card-wrapper {
+    overflow: hidden;
+    column-gap: 10px;
+  }
+
+  .container-popular-article .article-popular-1 {
+    width: 100%;
+  }
+
+  .container-popular-article aside {
+    display: none;
+  }
+
+  .banner p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .card-wrapper {
+    overflow: hidden;
+    /*border: 1px solid red;*/
+    width: 100%;
+  }
+}
